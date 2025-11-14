@@ -1,0 +1,77 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor} % not in use yet LOL
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[export]{adjustbox}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=10mm,
+ top=10mm,
+ right=10mm,
+ bottom=10mm,
+ }
+
+%====================
+% File:         resume.tex
+% Modifying author2:       https://github.com/mengisok 
+% Last Updated: Oct 29, 2022
+% Notes:        I edited again on the version of @gobborg      
+%====================
+
+%====================
+% File:         resume.tex
+% Modifying author1:       https://github.com/gobborg 
+% Last Updated: Dec 26, 2021
+% Notes:        I just made it prettier and better suited to
+%               my needs.
+%====================
+
+%====================
+% File:         resume.tex
+% Original author:       https://github.com/TimmyChan 
+%               https://www.linkedin.com/in/timmy-l-chan/
+% Last Updated: Nov 19, 2021
+% Notes:        All formatting is done in TLCresume.sty
+%               No need to touch that file. 
+%               All actual content is in the sections/ folder.
+%====================
+
+\usepackage{TLCresume}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\author{Mridu Prashanth} 
+\def\phone{(765)701-8584}
+\def\city{West Lafayette, Indiana}
+\def\email{prashanthmridu@gmail.com}
+\def\linktree{
+\includegraphics[scale=0.05, right]{linktree.png}
+}
+
+\begin{document}
+\import{sections/}{_header}
+\vspace*{0pt}
+
+\section{Education}
+\import{sections/}{education}
+\vspace*{5pt}
+
+\section{Research}
+\import{sections/}{research}
+\vspace*{5pt}
+
+\section{Skills}
+\import{sections/}{skills}
+\vspace*{5pt}
+
+\section{Experience}
+\import{sections/}{experience}
+\vspace*{5pt}
+
+\end{document}

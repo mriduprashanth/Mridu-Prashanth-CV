@@ -1,0 +1,24 @@
+% I edited the minipages to fit widths for if you have a long name and/or title
+%====================
+% Header: Contact
+%====================
+
+\begin{center}
+	\begin{minipage}[b]{.5\textwidth}
+	\makeatletter
+	\raggedright
+	{\huge \@author} \\
+	{\city} \\ % City
+	{\large \phone} \\ % Phone
+	\href{mailto:\email}{\email} \\ % Email
+	\makeatother
+    \vspace{.7em}
+	\end{minipage}%
+	\begin{minipage}[b]{0.5\textwidth}
+	{\linktree}
+	\raggedleft
+	\href{https://github.com/moliveme}{GitHub},        \href{http://linkedin.com/in/mridu-prashanth-1b29341aa}{LinkedIn}, 
+        \href{https://devpost.com/moliveme}{Devpost},
+        Research papers, others
+	\end{minipage}
+\end{center}

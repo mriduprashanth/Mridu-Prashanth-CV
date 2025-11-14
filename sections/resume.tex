@@ -1,0 +1,158 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+\setlist[itemize]{leftmargin=1.2em, topsep=0.15em, itemsep=0.05em, parsep=0em}
+
+% Two-column-style section: left = heading, right = content
+\newcommand{\cvsection}[2]{%
+  \vspace{0.5em}%
+  \noindent
+  \parbox[t]{0.15\textwidth}{#1}%
+  \hspace{1em}%
+  \parbox[t]{0.83\textwidth}{#2}%
+}
+
+\begin{document}
+\pagestyle{empty}
+
+%----------------------------------------------------------
+% HEADER
+%----------------------------------------------------------
+
+\begin{center}
+  {\fontsize{12}{13}\selectfont \textbf{Mridu Prashanth}}\\[1.2em]
+  \hrule
+\end{center}
+
+\noindent\makebox[\textwidth][s]{%
+  \makebox[0.33\textwidth][l]{\href{https://mriduprashanth.github.io/}{https://mriduprashanth.github.io/}}%
+  \makebox[0.33\textwidth][c]{West Lafayette, Indiana}%
+  \makebox[0.33\textwidth][r]{+1 (765) 701-8584}%
+}
+
+\vspace{0.3em}
+
+%==========================================================
+% EDUCATION
+%==========================================================
+
+\cvsection{Education}{
+\textbf{Purdue University}, West Lafayette, IN \hfill Aug 2022 -- May 2026\\
+BS in Computer Science (Honors), BS in Mathematics; GPA: 3.83\\
+Relevant Courses: Computer Graphics, Linear Algebra, Artificial Intelligence, Machine Learning, Probability, Analysis of Algorithms, Data Structures, Programming in C, Systems Programming, Operating Systems, Randomized Algorithms\\
+Research/Teaching Assistant; President (DOSA Club); TEDxPurdueU Design Chair; HelloWorld Hackathon Organizer; CS Corporate Partners Scholarship awardee; Dean's List \& Semester Honors
+}
+
+%==========================================================
+% PAPERS & PUBLICATIONS (placeholder)
+%==========================================================
+
+\cvsection{Papers \& Publications}{
+Placeholder text: Manuscripts in preparation. Will update upon submission.
+}
+
+%==========================================================
+% ONGOING WORK (fills your active research entries)
+%==========================================================
+
+\cvsection{On-going Work}{
+\textbf{VECMA-3SV: VE Complexity Management via Stochastic Single Shot Visibility} \hfill May 2025 -- Present\\
+Advisor: Prof. Voicu Popescu, XR Lab, Purdue University\\
+Compressed VEs by 80\%; developed an aggressive visible-set computation method with improved field-of-view coverage. Achieved error rates of 0.05\%, SSIM 0.99, PSNR 40dB. Built using C++/OpenGL/FLTK, Unity, Meta Quest 3. Delivered a talk at the Purdue Summer Research Symposium (2025).
+}
+
+%==========================================================
+% PRESENTATIONS & POSTERS (placeholder)
+%==========================================================
+
+\cvsection{Presentations \& Posters}{
+Placeholder text: Research posters and presentations forthcoming; will update after next symposium cycle.
+}
+
+%==========================================================
+% RESEARCH EXPERIENCE
+%==========================================================
+
+\cvsection{Research Experience}{
+\textbf{UFZs: A Novel Method to Identify Urban Fire Zones for Urban Planning} \hfill Jun 2024 -- Oct 2024\\
+Advisors: Prof. Daniel Aliaga \& Prof. Aniket Bera, Purdue University\\
+Modelled layouts using OpenStreetMaps and U-Tree datasets. Simulated fires in 10+ hotspot zones on Blender; analyzed wind/humidity factors. Applied K-Means, graph clustering, convex hull pipelines to identify hotspot types. Presented at Purdue Fall Research Expo (2024) and IDiF Summer Research Symposium (2024).\\[0.4em]
+
+\textbf{AI-driven Robotic Triage Labeling \& Emergency Medical Information System} \hfill Jan 2024 -- May 2024\\
+Advisor: Prof. Aniket Bera, IDEAS Lab\\
+Evaluated SVM, MLP, Random Forest, Gaussian NB for patient acuity classification. Classified Level 1 acuity with 99\% accuracy. Utilized MIMIC-IV \& Yale EMD datasets. Augmented data using SMOTE and Google API embeddings. IEEE IROS 2024 submission; 2nd place at Purdue Spring Research Conference.\\[0.4em]
+
+\textbf{AffectEcho: Emotion \& Affect Transfer for Speech Synthesis} \hfill Jun 2023 -- Dec 2023\\
+Advisor: Prof. Aniket Bera, IDEAS Lab\\
+AAAI 2024 submission. Achieved 5.4\% reduction in MCD compared to SOTA baselines. Built visualization tools using Python, Matplotlib, t-SNE.
+}
+
+%==========================================================
+% TEACHING EXPERIENCE
+%==========================================================
+
+\cvsection{Teaching Experience}{
+\textbf{Undergraduate Teaching Assistant, Department of Computer Science, Purdue} \hfill Aug 2023 -- Present\\
+Courses: CS 381 (Algorithms), CS 252/240 (Systems Programming/C), CS 193 (Tools)\\
+\begin{itemize}
+  \item Lead developer: coordinated 4-person team; daily standups; designed homeworks \& solutions; built testing modules in C for 720 students.
+  \item Led weekly labs/office hours; wrote quizzes; graded biweekly; supported $\sim$40 students per week.
+  \item Taught pointers, memory allocation, threads, scripting languages, lex/yacc, algorithms, computational complexity, graph algorithms, and more using visuals and pseudocode.
+\end{itemize}
+
+\textbf{Tutor, WIE-WISP Program (College of Science, Purdue)} \hfill Aug 2023 -- Dec 2023\\
+Tutored physics, calculus 1–3, precalc, Python, and C; reached $\sim$60 students.\\[0.4em]
+
+\textbf{Officer \& Mentor, Girls Who Code (Purdue College Loop)} \hfill Jan 2023 -- May 2024\\
+\begin{itemize}
+  \item \textbf{Oakland Academy Workshop}: taught 30+ high school girls HTML/CSS/JS live on Code.org.
+  \item \textbf{Jefferson High School Workshop}: created C/C++ materials; managed GWC LinkedIn page.
+\end{itemize}
+}
+
+%==========================================================
+% AWARDS
+%==========================================================
+
+\cvsection{Awards}{
+CS Corporate Partners Scholarship; Dean’s List \& Semester Honors; Finalist at ICPC AlgoQueen National Collegiate Hackathon (2022).
+}
+
+%==========================================================
+% PROJECTS
+%==========================================================
+
+\cvsection{Projects}{
+\begin{itemize}
+  \item \textbf{Bad Calculator 3000}: Converts infix to postfix and evaluates via stack; built with JavaScript/HTML/CSS.
+  \item \textbf{SearchTracker}: Chrome extension to save papers and Google Scholar profiles.
+  \item \textbf{NutritionAI}: ML-based nutritional estimation from images; built for HackMIT.
+  \item \textbf{Pathways}: CS course-planning tool; built for BoilerMakeX.
+  \item \textbf{AlgoQueen Hackathon Finalist}: Solved $\sim$30 algorithmic problems in C++.
+\end{itemize}
+}
+
+%==========================================================
+% COMMUNITY INVOLVEMENT (placeholder)
+%==========================================================
+
+\cvsection{Community Involvement}{
+Placeholder text: STEM outreach, mentoring, and volunteering engagements to be added.
+}
+
+%==========================================================
+% REFERENCES (placeholder)
+%==========================================================
+
+\cvsection{References}{
+Available upon request.
+}
+
+\end{document}
